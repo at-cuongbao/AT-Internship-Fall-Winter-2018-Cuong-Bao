@@ -1,0 +1,247 @@
+/* Default */
+body {
+  margin: 0;
+  margin-top: 2%;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  max-width: 1366px;
+  margin: 0 10%;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+.active {
+  color: #62c6f8 !important;
+}
+.text-white {
+  color: #fff;
+}
+.text-blue {
+  color: #62C6F8;
+} 
+.btn-blue {
+  background-color: #4BBC56;
+  padding: 10px 40px;
+  border: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+}
+/* Header top */
+.header-logo {
+  float: left;
+}
+.header-logo-top, .header-logo-content {
+  display: inline-block;
+}
+.header-logo-content {
+  margin-left: 20px;
+}
+.header-logo-content h1 {
+  margin: 0;
+}
+.header-contact, .header-sociality {
+  float: right;
+}
+.header-top:after {
+  width: 100%;
+  height: 1px;
+  background-color: #EDEDED;
+}
+/* Header bottom */
+.header-menu, .social-item {
+  float: left;
+}
+.menu-list, .social-list {
+  background-color: #fff;
+  overflow: hidden;
+}
+.menu-item {
+  float: left;
+  border-right: 1px solid #EDEDED;
+}
+.menu-item:last-child {
+  border-right: none;
+}
+.menu-link, .social-link {
+  display: block;
+  text-align: center;
+}
+.menu-link {
+  text-transform: uppercase;
+  padding: 20px;
+  color: #909090;
+}
+.menu-link:hover {
+  color: #62c6f8;
+}
+.social-link{
+  padding: 21px 5px;
+}
+/* Section banner */
+.breadcrumb {
+  background-image: url('../images/img-banner.png');
+  overflow: hidden;
+}
+.breadcrumb-item {
+  display: inline-block;
+}
+.breadcrumb-item a, .breadcrumb-item span {
+  display: inline-block;
+  text-align: center;
+  padding: 60px 10px;
+  text-transform: uppercase;
+}
+.breadcrumb li+li:before {
+  padding: 0 8px;
+  color: black;
+  content: '/\00a0';
+}
+/* Sidebar */
+.side-bar {
+  width: 25%;
+  float: left;
+}
+.healthy-item-title {
+  float: left;
+  margin: 0;
+  text-transform: uppercase;
+}
+.dropdown-btn {
+  float: right;
+  background-color: #D9E4E9;
+  border: none;
+}
+.dropdown-container, .sub-healthy-item {
+  padding: 6px 8px 6px 16px;
+  cursor: pointer;
+}
+.dropdown-container {
+  background-color: #D9E4E9;
+  padding: 16px 8px 16px 16px;
+}
+.sub-healthy-list {
+  display: none;
+  list-style-type: disc;
+  padding: 20px 0 20px 40px;
+}
+/* Form sidebar */
+.form-sidebar {
+  background-color: #D9E4E9;
+  margin-top: 40px;
+}
+.form-contact {
+  padding: 20px;
+}
+.form-title {
+  text-transform: uppercase;
+}
+.form-title + div::before {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 2px;
+  background-color: #62C6F8;
+  margin-bottom: 20px;
+}
+.form-input-control {
+  margin: 20px 0;
+}
+.form-input-control:last-child {
+  text-align: center;
+  margin-bottom: 0;
+}
+.form-input {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.btn-submit {
+  color: #FFF;
+  text-transform: uppercase;
+}
+/* Main content */
+.page-content {
+  margin-top: 5%;
+}
+.main-content {
+  width: 75%;
+  float: right;
+}
+.service-list {
+  overflow: hidden;
+}
+.service-item {
+  float: left;
+  width: 30%;
+  margin: 0 0 3% 3%;
+  border: 1px solid #EDEDED;
+}
+.service-image {
+  width: 100%;
+  height: 190px;
+}
+.service-content {
+  padding-left: 8%;
+}
+.service-title {
+  text-transform: uppercase;
+}
+.service-link {
+  float: right;
+  background-color: #62C6F8;
+  color: #FFF;
+}
+/* Footer */
+.page-footer {
+  background-color: #62C6F8;
+  margin-top: 5%;
+}
+.footer-content {
+  padding: 20px 0;
+}
+.footer-bottom {
+  padding-bottom: 20px;
+}
+.footer-bottom::before {
+  display: block;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: #EDEDED;
+  margin-bottom: 20px;
+}
+.info-list {
+  overflow: hidden;
+}
+.info-item {
+  float: left;
+  width: 33.33%;
+}
+.footer-title, .info-link, .footer-copyright, .footer-author {
+  text-transform: uppercase;
+}
+.sub-info-item {
+  padding: 6px 8px 6px 16px;
+  cursor: pointer;
+}
+.sub-info-item::before {
+  content: '•';
+  color: #FFF;
+  padding-right: 5px;
+}
+.footer-copyright {
+  float: left;
+}
+.footer-author {
+  float: right;
+}

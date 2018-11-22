@@ -93,7 +93,7 @@ ul {
   border-bottom: 1px solid #EDEDED;
   padding: 0.9em 0;
 }
-.header-top .clearfix {
+.header-top .container {
   position: relative;
 }
 .header-logo {
@@ -107,6 +107,9 @@ ul {
 }
 .header-logo-content {
   margin-left: 20px;
+  line-height: 1.6em;
+  position: relative;
+  top: -11px;
 }
 .header-logo-title, .header-logo-description {
   line-height: 1.4em;
@@ -142,6 +145,9 @@ ul {
 }
 .menu-item:last-child {
   border-right: none;
+}
+.menu-icon {
+  display: none;
 }
 .menu-link, .social-link {
   display: block;
@@ -180,6 +186,7 @@ ul {
 .breadcrumb li + li::before {
   color: black;
   content: "/\00a0";
+  padding: 0 .4em;
 }
 /* Sidebar */
 .side-bar {
@@ -207,10 +214,10 @@ ul {
   display: none;
   padding: 20px 0 20px 20px;
 }
-.sub-healthy-item:before {
+li.sub-healthy-item::before {
   content: '•',
-  color: #bcbcbc;
-  padding-right: .3em;
+  color: white;
+  padding-right: 5px;
 }
 .sub-healthy-item-title {
   text-transform: initial;
@@ -272,6 +279,10 @@ ul {
 }
 .service-content {
   padding-left: 8%;
+  margin: .6em 0;
+}
+.service-title {
+  margin: .4em 0;
 }
 .service-link {
   float: right;
@@ -300,6 +311,9 @@ ul {
 .info-item {
   float: left;
   width: 33.33%;
+}
+.footer-title {
+  margin-bottom: .7em;
 }
 .footer-copyright, .footer-author {
   text-transform: uppercase;
@@ -348,7 +362,7 @@ ul {
     display: none;
   }
   .service-content {
-    margin: .4em 0;
+    margin: .7em 0;
   }
   .service-description {
     margin-top: .4em;
@@ -369,6 +383,21 @@ ul {
     margin-top: 0.5em;
     position: static;
     transform: none;
+  }
+  .menu-list {
+    margin: 0 3em;
+  }
+  .menu-item:not(:first-child) {
+    display: none;
+  }
+  .menu-item:first-child {
+    border: none;
+    float: left;
+  }
+  .menu-icon {
+    display: inline-block;
+    float: right;
+    padding: 14px 20px;
   }
   .healthy-list {
     display: none;

@@ -77,9 +77,9 @@
         Output: 30
         ```
 
-        var sum = function (a, b) {
-          if (a === b) {
-            return a * 3;
+        let sum = function (a = 0, b = 0) {
+          if (+a == +b) {
+            return a * 6;
           }
           return a + b;
         };
@@ -100,12 +100,12 @@
         Input: a = 22 // (22 - 19) * 3
         Output: 9
         ```
-        var compare = function (a) {
+        let compare = function (a = 0) {
           if (a > 19) {
             return (a - 19) * 3;
           }
           return (19 - a); 
-        }
+        };
 
         compare(20); // Result: <span id="question_2"></span>
       </pre>
@@ -137,7 +137,7 @@
           return result;
         }
 
-        divisibleByNumber("234*", 3); // Result: <span id="question_3"></span>
+        divisibleByNumber("234*"); // Result: <span id="question_3"></span>
       </pre>
     </li>
     <li>

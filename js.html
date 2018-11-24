@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Javascript homework</title>
+  <link rel="stylesheet" href="">
+  <style type="text/css">
+    pre {
+      margin: 0;
+      font-size: 1.4em;
+    }
+  </style>
+</head>
+<body>
+  <h1>HTML + Javascript Exercise</h1>
+  <h2>Knowledge round-up</h2>
+  <h2>**Javascript**</h2>
+  <ol>
+    <li>
+      <h3>What are the differences between a variable that is: `null`, `undefined`?</h3>
+      <div>
+        <p>- Similars: They are all types;</p>
+        <p>- Differences: null is an object, underfined is not.</p>
+      </div>
+    </li>
+    <li>
+      <h3>What is `use strict`? what are the advantages and disadvantages to using it?</h3>
+      <div>
+        <p>- Defines that Js code should be executed in 'strict mode'.</p>
+        <p>- A new directive in ES5.</p>
+        <ul>
+          <li>
+            <h4>The advantages: </h4>
+            <p>+ Strict mode makes it easier to write "secure" JavaScript.</p>
+            <p>+ Strict mode changes previously accepted "bad syntax" into real errors.</p>
+          </li>
+          <li>
+            <h4>The disadvantages: </h4>
+            <p>+ Not to throw an error, making it possible to accidentally create a global variable.</p>
+            <p>+ Allow acceptting "bad syntax" (any assignment to a non-writable property, a getter-only property, a non-existing property, a non-existing variable, or a non-existing object)</p>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <h3>What are the differences between `==` and `===`? Write an example for each case (if any)?</h3>
+      <p>- Using the `===`, the values must be equal in value and type as well, just in value with `==`.</p>
+      <p>- Example:</p>
+      <pre>
+      null == underfined; // return true
+      null === underfined; //return false
+      </pre>
+    </li>
+    <li>
+      <h3>What is different between declaration: `var`, `const` and `let`?</h3>
+      <p>- `var` can be used to declare both local and global variables</p>
+      <p>- let (New in ES6) can be used to declare a block scope local variable.</p>
+      <p>- const (New in ES6): Declare a read-only variable (a constant variable).</p>
+    </li>
+    <li>
+      <h3>What are values in the `FALSE` group.</h3>
+      <p>=> They are "", 0 (or NaN), null, underfined, false.</p>
+    </li>
+  </ol>
+  <br>
+  <h2>### Playground</h2>
+  <ol>
+    <li>
+      <h3>Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum.</h3>
+      <pre>
+        ```
+        Input: a = 5, b = 10
+        Output: 15
+
+        Input: a = 5, b = 5
+        Output: 30
+        ```
+
+        let sum = function (a = 0, b = 0) {
+          if (+a == +b) {
+            return a * 6;
+          }
+          return a + b;
+        };
+        
+        sum (5, 5); // Result: <span id="question_1"></span>
+      </pre>
+    </li>
+    <li>
+      <h3>Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19.</h3>
+      <pre>
+        ```
+        Input: a = 12
+        Output: 7
+
+        Input: a = 19
+        Output: 0
+
+        Input: a = 22 // (22 - 19) * 3
+        Output: 9
+        ```
+        let compare = function (a = 0) {
+          if (a > 19) {
+            return (a - 19) * 3;
+          }
+          return (19 - a); 
+        };
+
+        compare(20); // Result: <span id="question_2"></span>
+      </pre>
+    </li>
+    <li>
+      <h3>A masked number is a string that consists of digits and one asterisk (*) that should be replaced by exactly one digit. Given a masked number find all the possible options to replace the asterisk with a digit to produce an integer divisible by 3.</h3>
+      <pre>
+        ```
+        Input: a = '1*9'
+        Output: ['129', '159', '189'] // Xuất ra chia hết cho 3.
+        ```
+
+        ```
+        Input: a = '1234567890*'
+        Output: ['12345678900', 
+         '12345678903', 
+         '12345678906', 
+         '12345678909'
+        ]
+        ```
+        let divisibleByThree = function (arg) {
+          let result = [];
+          for (let i = 0; i <= 9; i++) {
+            let newArg = +arg.replace("*", i);
+            if (+newArg % 3 == 0) {
+              result.push(newArg);
+            }
+          }
+          return result;
+        }
+
+        divisibleByNumber("234*"); // Result: <span id="question_3"></span>
+      </pre>
+    </li>
+    <li>
+      <h3>A masked number is a string that consists of digits and one asterisk (*) that should be replaced by exactly one digit. Given a masked number find all the possible options to replace the asterisk with a digit to produce an integer divisible by 6.</h3>
+      <pre>
+        ```
+        Input: a = '1*9'
+        Output: []
+        ```
+
+        ```
+        Input: a = '1234567890*'
+        Output: ['12345678900', 
+         '12345678906']
+        ```
+
+        let divisibleBySix = function (arg) {
+          let result = [];
+          for (let i = 0; i <= 9; i++) {
+            let newArg = +arg.replace(i, "*");
+            if (newArg % 6 == 0) {
+              result.push(newArg);
+            }
+          }
+          return result;
+        }
+        divisibleByNumber("1234567890*", 6); // Result: <span id="question_4"></span>
+      </pre>
+    </li>
+  </ol>
+  <script type="text/javascript" src="./js/exercise.js"></script>
+</body>
+</html>

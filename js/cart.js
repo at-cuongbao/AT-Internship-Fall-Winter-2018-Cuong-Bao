@@ -8,6 +8,7 @@ let cartQuantity = document.getElementById('cart-quantity');
 (function fillTableIn() {
   let tableRows = [];
   let products = fetchedData();
+  
   for (let i = 0; i < data.length; i++) {
     for (let j = 0; j < products.length; j++) {
       if (products[j] == +data[i].id) {
@@ -18,6 +19,7 @@ let cartQuantity = document.getElementById('cart-quantity');
 
   tableRows = tableRows.map(function(item, key) {
     total += item.price;
+    
     return (
       '<tr data-id="'+ item.id +'" class="table-item">' +
         '<td class="item-content">' +
@@ -43,20 +45,29 @@ let cartQuantity = document.getElementById('cart-quantity');
 })();
 
 let removeBtns = document.getElementsByClassName('remove-btn');
+
 for (let i = 0; i < removeBtns.length; i++) {  
   removeBtns[i].addEventListener('click', function() {  
-    let productTableData = this.parentElement;
-    let productTableRow = productTableData.parentElement;
+    let productTableRow = this.parentElement.parentElement;
     let productId = +productTableRow.getAttribute('data-id');
+
     // Remove a row on client before updating localStorage.
     tableBody.removeChild(productTableRow);
+
+    data.forEach(function(item) {
+      if (item.id == productId) {
+        total -= item.price;
+      }
+    });
+
     // Update total products.
-    total -= data[productId - 1].price;
     tableTotal.innerHTML = total;
+
     // Remove product deleted.
     let products = fetchedData().filter(function(item) {
       return item != productId;
     });
+
     cartQuantity.innerHTML = products.length;
     localStorage.setItem('products', JSON.stringify(products));
   });

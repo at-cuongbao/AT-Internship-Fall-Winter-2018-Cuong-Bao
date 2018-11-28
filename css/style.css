@@ -106,7 +106,7 @@ ul {
   width: 100%;
   height: 234px;
 }
-.cart-btn, .cart-price {
+.js-cart-btn, .cart-price {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -150,7 +150,7 @@ ul {
 .item-button {
   width: 70px;
 }
-.remove-btn {
+.js-remove-btn {
   width: 100%;
   height: 100%;
 }

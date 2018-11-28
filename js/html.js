@@ -6,11 +6,11 @@ let cartList = document.getElementById('cart-list');
 (function fillListIn(data) {
   let products = fetchedData();
   let items = data.map(function(item, key) {
-  let disabled;    
+  let isDisable;    
 
   for (let i = 0; i < products.length; i++) {
     if (products[i] == item.id) {
-      disabled = 'disabled';
+      isDisable = 'disabled';
     }
   }
 
@@ -23,7 +23,7 @@ let cartList = document.getElementById('cart-list');
             '<p class="cart-desc">Description: ' + item.desc + '</p>' + 
             '<span class="cart-price">$'+ item.price +'</span>' +
         '</figcaption>' +
-        '<button class="cart-btn" '+ disabled +'>Add To Card</button>' +
+        '<button class="js-cart-btn" '+ isDisable +'>Add To Card</button>' +
       '</figure>' +
     '</li>');
   }).join('');
@@ -32,12 +32,12 @@ let cartList = document.getElementById('cart-list');
   cartList.innerHTML = items;
 })(data);
 
-let addBtns = document.getElementsByClassName('cart-btn');
+let addBtns = document.getElementsByClassName('js-cart-btn');
 for (let i = 0; i < addBtns.length; i++) {
   addBtns[i].addEventListener('click', function() {
-    this.disabled = true;
     let products = fetchedData();
     products.push(+this.parentElement.getAttribute('data-id'));
+    this.disabled = true;
     cartQuantity.innerHTML = '$' + products.length;
     localStorage.setItem('products', JSON.stringify(products));
   });

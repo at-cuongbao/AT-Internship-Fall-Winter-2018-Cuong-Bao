@@ -30,10 +30,10 @@ let cartQuantity = document.getElementById('cart-quantity');
             '<p class="item-decs">'+ item.desc +'</p>' +
           '</div>' +
         '</td>' +
+        '<td class="item-quantity"><i>1</i></td>' +
         '<td class="item-price">' +
           '<i>$'+ item.price +'</i>' +
         '</td>' +
-        '<td class="item-quantity"><i>1</i></td>' +
         '<td class="item-button"><button class="remove-btn" onclick="">Remove</button></td>' +
       '</tr>'
     );

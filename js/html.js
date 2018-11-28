@@ -38,7 +38,7 @@ for (let i = 0; i < addBtns.length; i++) {
     this.disabled = true;
     let products = fetchedData();
     products.push(+this.parentElement.getAttribute('data-id'));
-    cartQuantity.innerHTML = products.length;
+    cartQuantity.innerHTML = '$' + products.length;
     localStorage.setItem('products', JSON.stringify(products));
   });
 }

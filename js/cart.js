@@ -9,10 +9,10 @@ let cartQuantity = document.getElementById('cart-quantity');
   let tableRows = [];
   let products = fetchedData();
   
-  for (let i = 0; i < data.length; i++) {
-    for (let j = 0; j < products.length; j++) {
-      if (products[j] == +data[i].id) {
-        tableRows.push(data[i]);
+  for (let i = 0; i < products.length; i++) {
+    for (let j = 0; j < data.length; j++) {
+      if (products[i] === data[j].id) {
+        tableRows.push(data[j]);
       }
     }
   }
@@ -52,12 +52,16 @@ for (let i = 0; i < removeBtns.length; i++) {
     let productId = +productTableRow.getAttribute('data-id');
 
     // Remove product deleted.
-    let products = fetchedData().filter(function(item) {
-      return item != productId;
-    });
+    // let products = fetchedData().filter(function(item) {
+    //   return item != productId;
+    // });
+
+    let products = fetchedData();
+    let inp = products.indexOf(productId);
+    products.splice(inp, 1);
 
     data.forEach(function(item) {
-      if (item.id == productId) {
+      if (item.id === productId) {
         total -= item.price;
       }
     });

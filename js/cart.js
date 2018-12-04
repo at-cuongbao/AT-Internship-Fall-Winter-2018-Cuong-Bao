@@ -48,6 +48,7 @@ let removeBtns = document.getElementsByClassName('js-remove-btn');
 
 for (let i = 0; i < removeBtns.length; i++) {  
   removeBtns[i].addEventListener('click', function() {  
+    alert(i);
     let productTableRow = this.parentElement.parentElement;
     let productId = +productTableRow.getAttribute('data-id');
 
@@ -60,7 +61,7 @@ for (let i = 0; i < removeBtns.length; i++) {
     let inp = products.indexOf(productId);
     products.splice(inp, 1);
 
-    data.forEach(function(item) {
+    data.map(function(item) {
       if (item.id === productId) {
         total -= item.price;
       }

@@ -1,0 +1,276 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-submit {
+  color: #FFFFFF;
+}
+
+.btn-blue {
+  background-color: #4BBC56;
+  padding: 10px 40px;
+  border: 0;
+}
+
+.form-sidebar {
+  background-color: #D9E4E9;
+  margin-top: 2.3em;
+}
+
+.form-contact {
+  padding: 20px;
+}
+
+.form-title {
+  margin: 0;
+}
+.form-title::after {
+  border-bottom: 2px solid #62C6F8;
+  width: 25%;
+  content: "";
+  display: block;
+  margin-top: 15px;
+}
+
+.form-input-control {
+  margin-top: 15px;
+}
+.form-input-control:last-child {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.form-input {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.active {
+  color: #62c6f8;
+}
+
+/* Header top */
+.header-top {
+  border-bottom: 1px solid #62C6F8;
+  padding: 0.9em 0;
+}
+.header-top .container {
+  position: relative;
+}
+
+.header-logo {
+  float: left;
+}
+
+.header-logo-top {
+  display: inline-block;
+}
+
+.header-logo-content {
+  display: inline-block;
+  margin-left: 20px;
+  line-height: 1.6em;
+  position: relative;
+  top: -11px;
+}
+
+.header-logo-title {
+  line-height: 1.4em;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.header-logo-description {
+  line-height: 1.4em;
+  font-weight: lighter;
+}
+
+.header-sociality {
+  float: right;
+}
+
+.header-contact {
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+/* Header bottom */
+.header-menu, .social-item {
+  float: left;
+}
+
+.menu-list, .social-list {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.menu-item {
+  float: left;
+  border-right: 1px solid #62C6F8;
+}
+.menu-item:last-child {
+  border-right: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu-link, .social-link {
+  display: block;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.menu-link {
+  padding: 20px;
+  color: #909090;
+}
+.menu-link:hover {
+  color: #62c6f8;
+}
+
+.social-link {
+  padding: 21px 5px;
+}
+
+.page-footer {
+  background-color: #62C6F8;
+  margin-top: 3%;
+}
+
+.footer-content {
+  padding: 20px 0;
+}
+
+.footer-bottom {
+  padding-bottom: 20px;
+}
+.footer-bottom::before {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #EDEDED;
+  margin-bottom: 20px;
+}
+
+.info-item {
+  float: left;
+  width: 33.33%;
+}
+
+.footer-title {
+  margin-bottom: 0.7em;
+}
+
+.footer-copyright, .footer-author {
+  text-transform: uppercase;
+}
+
+.sub-info-item {
+  padding: 6px 8px 6px 16px;
+  cursor: pointer;
+}
+.sub-info-item::before {
+  content: "•";
+  color: #FFFFFF;
+  padding-right: 5px;
+}
+
+.footer-copyright {
+  float: left;
+}
+
+.footer-author {
+  float: right;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,43 @@
+.page-footer {
+  background-color: $footer-bg-color;
+  margin-top: 3%;
+}
+.footer-content {
+  padding: 20px 0;
+}
+.footer-bottom {
+  padding-bottom: 20px;
+  &::before {
+    display: block;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: $border-color;
+    margin-bottom: 20px;
+  }
+}
+.info-item {
+  float: left;
+  width: 33.33%;
+}
+.footer-title {
+  margin-bottom: .7em;
+}
+.footer-copyright, .footer-author {
+  text-transform: uppercase;
+}
+.sub-info-item {
+  padding: 6px 8px 6px 16px;
+  cursor: pointer;
+  &::before {
+    content: '•';
+    color: $white-color;
+    padding-right: 5px;
+  }
+}
+.footer-copyright {
+  float: left;
+}
+.footer-author {
+  float: right;
+}

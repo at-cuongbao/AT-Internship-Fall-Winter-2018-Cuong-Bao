@@ -1,0 +1,29 @@
+.form-sidebar {
+  background-color: $sidebar-bg-color;
+  margin-top: 2.3em;
+}
+.form-contact {
+  padding: 20px;
+}
+.form-title {
+  margin: 0;
+  &::after {
+    border-bottom: 2px solid $background-color;
+    width: 25%;
+    content: "";
+    display: block;
+    margin-top: 15px;
+  }
+}
+.form-input-control {
+  margin-top: 15px;
+  &:last-child {
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+.form-input {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}

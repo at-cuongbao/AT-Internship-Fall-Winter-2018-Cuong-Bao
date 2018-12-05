@@ -1,0 +1,17 @@
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.clearfix {
+  @extend %clearfix;
+}
+.active {
+  color: #62c6f8;
+}

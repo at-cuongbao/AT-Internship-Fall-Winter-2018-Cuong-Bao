@@ -1,0 +1,140 @@
+/* Media queries */
+@media screen and (max-width: 1023px) {
+  .header-menu, .menu-item {
+    float: none;
+  }
+  .menu-list {
+    text-align: center;
+  }
+  .menu-item {
+    display: inline-block;
+  }
+  .menu-link {
+    padding: 1.4em 0.9em;
+  }
+  .header-sociality {
+    display: none;
+  }
+  .sub-healthy-item-title {
+    font-size: .78em;
+  }
+  .service-item {
+    float: left;
+    width: 46%;
+    margin: 0 0 3% 3%;
+  }
+  .service-item:last-child {
+    display: none;
+  }
+  .service-content {
+    margin: .7em 0;
+  }
+  .service-description {
+    margin-top: .4em;
+    font-size: 0.9em;
+  }
+  .page-footer {
+    font-size: .9em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-top {
+    text-align: center;
+  }
+  .header-logo, .header-contact {
+    float: none;
+  }
+  .header-contact {
+    margin-top: 0.5em;
+    position: static;
+    transform: none;
+  }
+  .menu-list {
+    margin: 0 3em;
+  }
+  .menu-item:not(:first-child) {
+    display: none;
+  }
+  .menu-item:first-child {
+    border: none;
+    float: left;
+  }
+  .menu-icon {
+    display: inline-block;
+    float: right;
+    padding: 14px 20px;
+  }
+  .healthy-list {
+    display: none;
+  }
+  .form-sidebar {
+    margin-top: 0;
+  }
+  .side-bar, .main-content {
+    width: 100%;
+  }
+  .main-content {
+    margin-top: 1em;
+  }
+  .service-item {
+    width: 46%;
+  }
+  .footer-copyright, .footer-author {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+  .footer-copyright {
+    margin-bottom: 0.4em;
+  }
+}
+@media screen and (max-width: 479px) {
+  .header-logo, .header-contact, .footer-copyright, .footer-author
+   {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .header-contact {
+    position: static;
+    transform: none;
+    margin-top: 1em;
+  }
+  .healthy-list {
+    display: none;
+  }
+  .side-bar, .main-content, .service-top, .service-item, .form-title:after {
+    width: 100%;
+  }
+  .form-title, .service-title {
+    text-align: center;
+  }
+  .service-title, .service-description {
+    margin: .5em 0;
+  }
+  .service-item {
+    width: 100%;
+    margin: 0;
+  }
+  .service-content {
+    padding: 0;
+  }
+  .service-link {
+    display: none;
+  }
+  .footer-title, .footer-copyright, .footer-author {
+    font-size: 0.85em;
+  }
+  .info-link {
+    font-size: 0.6em;
+  }
+  .sub-info-item::before {
+    content: none;
+  }
+  .footer-img {
+    margin-right: .3em;
+  }
+  .footer-copyright {
+    margin-bottom: .7em;
+  }
+}

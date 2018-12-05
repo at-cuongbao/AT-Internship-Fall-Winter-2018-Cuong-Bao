@@ -1,0 +1,165 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Global */
+a {
+  text-decoration: none;
+}
+ul {
+  text-transform: none;
+}
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/* Header */
+.header-controller {
+  position: relative;
+}
+.access-list, .access-item {
+  display: inline-block;
+}
+.access-list {
+  margin-right: 2em;
+}
+.access-item + .access-item::before {
+  content: '/';
+  padding-right: .4em;
+}
+.header-content {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* Main content */
+#content-page {
+  margin: 2em 0;
+  min-height: 300px;
+}
+.cart-item {
+  width: calc(100% / 3);
+  box-sizing: border-box;
+  float: left;
+}
+.product-figure {
+  position: relative;
+  border: 1px solid #bcbcbc;
+  margin: 0 1em 1em 0;
+}
+.cart-desc {
+  margin-bottom: 21px;
+}
+.cart-img {
+  width: 100%;
+  height: 234px;
+}
+.js-cart-btn, .cart-price {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.cart-price {
+  right: 0;
+  left: 0;
+}
+/* Product table */
+.product-table {
+  width: 100%;
+}
+.product-table th, td {
+  border: 1px solid #bcbcbc;
+  position: relative;
+}
+.table-heading th {
+  padding: 0.4em;
+  background-color: #bcbcbc;
+}
+.table-item {
+  text-align: center;
+}
+.table-item i, .table-item button {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.item-content {
+  width: 50%;
+  position: relative;
+}
+.item-controller {
+  display: inline-block;
+  margin-left: 1em;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.item-button {
+  width: 70px;
+}
+.js-remove-btn {
+  width: 100%;
+  height: 100%;
+}
+#table-total, .table-count {
+  text-align: center;
+}
+/* Footer */
+.footer-content {
+  padding: 3em;
+  background-color: lightblue;
+  text-align: center;
+}

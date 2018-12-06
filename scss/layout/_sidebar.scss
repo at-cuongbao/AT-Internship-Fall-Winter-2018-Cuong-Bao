@@ -1,9 +1,9 @@
 /* Sidebar */
 .side-bar {
   width: 25%;
-  float: left;
+  @extend .pull-left;
   .healthy-item-title {
-    float: left;
+    @extend .pull-left;
     margin: 0;
   }
 }
@@ -12,7 +12,7 @@
   padding: 16px;
   cursor: pointer;
   .dropdown-btn {
-    float: right;
+    @extend .pull-right;
     background-color: $default-color;
     border: 0;
   }

@@ -2,11 +2,11 @@
   margin-top: 5%;
   .main-content {
     width: 75%;
-    float: right;
+    @extend .pull-right;
   }
 }
 .service-item {
-  float: left;
+  @extend pull-left;
   width: 30%;
   margin: 0 0 3% 3%;
   border: 1px solid $border-color;
@@ -21,7 +21,7 @@
       margin: .4em 0;
     }
     .service-link {
-      float: right;
+      @extend .pull-right;
       background-color: $background-color;
       color: $white-color;
     }

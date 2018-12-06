@@ -38,7 +38,7 @@
 }
 .menu-list {
   .menu-item {
-    float: left;
+    @extend .pull-left;
     border-right: 1px solid $background-color;
     &:last-child {
       border-right: none;
@@ -60,7 +60,7 @@
 }
 .social-list {
   .social-item {
-    float: left;
+    @extend .pull-left;
     .social-link{
       padding: 20px 5px;
       display: block;

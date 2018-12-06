@@ -5,11 +5,6 @@
 }
 .row{
     margin: 0 -10px;
-    &:after {
-        display: table;
-        clear: both;
-        content:'';
-    }
 }
 .row::after, .container::after {
   display: block;

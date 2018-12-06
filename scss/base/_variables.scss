@@ -5,13 +5,18 @@ $breakpoints: (
   large: 1024px,
   largest: 1280px
 );
+// Global colors.
+$primary-color: #4CAF50;
+$secondary-color: #00000000;
+$danger-color: #d9534f;
+$success-color: #5cb85c;
+$info-color: #5bc0de;
 $default-color: #D9E4E9;
-$blue-color: #4BBC56;
 $white-color: #FFFFFF;
-
+$blue-color: #4BBC56;
 $border-color: #EDEDED;
 $background-color: #62C6F8;
-
-$footer-bg-color: #62C6F8;
+// Page content.
 $menu-link-color: #909090;
 $sidebar-bg-color: #D9E4E9;
+$space: '\00a0';

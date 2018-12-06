@@ -3,15 +3,16 @@
   width: 100%;
   margin: 0 auto;
 }
-.pull-left {
-  float: left;
+.row{
+    margin: 0 -10px;
+    &:after {
+        display: table;
+        clear: both;
+        content:'';
+    }
 }
-.pull-right {
-  float: right;
-}
-.clearfix {
-  @extend %clearfix;
-}
-.active {
-  color: #62c6f8;
+.row::after, .container::after {
+  display: block;
+  content: "";
+  clear: both;
 }

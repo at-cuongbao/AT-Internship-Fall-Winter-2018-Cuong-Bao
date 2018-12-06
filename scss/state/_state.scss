@@ -1,0 +1,21 @@
+.is-active {
+  color: #62c6f8;
+}
+.text-white {
+  color: $white-color;
+}
+.text-blue {
+  color: $blue-color;
+}
+.text-center {
+  text-align: center;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.clearfix {
+  @extend %clearfix;
+}

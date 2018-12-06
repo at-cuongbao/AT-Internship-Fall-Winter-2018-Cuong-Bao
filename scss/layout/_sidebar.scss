@@ -1,0 +1,36 @@
+/* Sidebar */
+.side-bar {
+  width: 25%;
+  float: left;
+  .healthy-item-title {
+    float: left;
+    margin: 0;
+  }
+}
+.dropdown-controller {
+  background-color: $default-color;
+  padding: 16px;
+  cursor: pointer;
+  .dropdown-btn {
+    float: right;
+    background-color: $default-color;
+    border: 0;
+  }
+}
+.sub-healthy-list {
+  display: none;
+  padding: 20px 0 20px 20px;
+  .sub-healthy-item {
+    padding: 6px 16px;
+    cursor: pointer;
+    &::before {
+      content: '•';
+      color: $white-color;
+      padding-right: 5px;
+    }
+    .sub-healthy-item-title {
+      text-transform: initial;
+      font-size: 1em;
+    }
+  }
+}

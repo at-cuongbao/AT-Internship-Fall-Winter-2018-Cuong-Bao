@@ -1,0 +1,24 @@
+@mixin set-position ($position, $top, $right, $bottom, $left) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  position: $position;
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin box-shadow($left, $top, $radius, $color) {
+  box-shadow: $left $top $radius $color;
+  -webkit-box-shadow: $left $top $radius $color;
+  -moz-box-shadow: $left $top $radius $color;
+}
+@mixin transform($xAxis, $yAxis){
+  -webkit-transform: translate($xAxis, $yAxis);
+  -moz-transform: translate($xAxis, $yAxis);
+  -ms-transform: translate($xAxis, $yAxis);
+  -o-transform: translate($xAxis, $yAxis);
+  transform: translate($xAxis, $yAxis);
+}
